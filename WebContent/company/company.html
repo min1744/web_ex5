@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<link type="text/css" rel="stylesheet" href="../css/layout.css">
+<title>:: JYP Entertainment ::</title>
+<link type="text/css" rel="stylesheet" href="../css/layout.css">
+<style type="text/css">
+#contents_title {
+	margin-top: 57px;
+	background-color: #f3f3f3;
+	height: 170px;
+}
+
+#title_img {
+	width: 980px;
+	height: 170px;
+	margin: 0 auto;
+}
+
+#title_img>img {
+	margin: 40px;
+}
+
+#table_title {
+	width: 940px;
+	height: 60px;
+	padding-top: 40px;
+	padding-left: 40px;
+	margin: auto;
+}
+
+.notice-caption {
+	height: 60px;
+	margin-bottom: 15px;
+}
+
+.notice-caption img {
+	float: left;
+}
+
+#words {
+	font-size: 1.7em;
+	color: #96baec;
+	padding-left: 10px;
+	float: left;
+	margin-bottom: 15px;
+}
+
+#strong {
+	color: #008ae6;
+}
+
+.container {
+	width: 940px;
+	height: 495px;
+	padding-top: 40px;
+	padding-left: 40px;
+}
+
+#thead {
+	background-color: #259cfa;
+}
+
+#thead th {
+	color: white;
+	border: 1px solid white;
+}
+
+#tfoot2 {
+	background-color: #259cfa;
+}
+
+.tuple {
+	color: gray;
+}
+
+.tuple>a {
+	color: gray;
+}
+
+.center {
+	text-align: center;
+}
+
+.font_size {
+	font-size: 0.9em;
+}
+
+#no {
+	width: 13%;
+}
+
+#title {
+	width: 69%;
+}
+
+#date {
+	width: 17%;
+}
+
+#index {
+	text-align: center;
+	font-size: 0.8em;
+	word-spacing: 10px;
+}
+
+#select {
+	width: 88px;
+	height: 18px;
+	font-size: 0.8em;
+	color: gray;
+}
+
+#search {
+	width: 570px;
+	height: 18px;
+}
+</style>
+</head>
+<body>
+	<!------------------ Header Start -------------------->
+	<header>
+		<div id="header">
+			<div id="header_wrap">
+				<div id="logo">
+					<a href="/web_ex5/index.html"><img alt="logo"
+						src="/web_ex5/images/jyplogo.png"></a>
+				</div>
+				<nav id="header_nav">
+					<ul>
+						<li class="dropdown"><a class="dropdown-toggle"
+							data-toggle="dropdown" href="/web_ex5/company/company.html">COMPANY<span
+								class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li><a href="#">ABOUT JYP</a></li>
+								<li><a href="#">HISTORY</a></li>
+								<li><a href="/web_ex5/company/company.html">NOTICE</a></li>
+								<li><a href="#">CONTACT US</a></li>
+								<li><a href="#">RECRUIT</a></li>
+								<li><a href="#">IR</a></li>
+							</ul></li>
+						<li class="dropdown"><a class="dropdown-toggle"
+							data-toggle="dropdown" href="/web_ex5/company/company.html">AUDITION<span
+								class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li><a href="#">JYP AUDITION</a></li>
+								<li><a href="#">NEWS</a></li>
+								<li><a href="#">FAQ</a></li>
+							</ul></li>
+						<li><a href="/web_ex5/member/memberTerms.html">SIGN UP</a></li>
+						<li><a href="/web_ex5/member/memberLogin.html">LOG IN</a></li>
+					</ul>
+				</nav>
+				<nav id="header_subnav">
+					<button type="button" id="sitemap" class="btn">SITEMAP</button>
+					<ul>
+						<li><a href="#">KO</a></li>
+						<li><a href="#">EN</a></li>
+						<li><a href="#">CH</a></li>
+						<li><a href="#">JP</a></li>
+					</ul>
+				</nav>
+				<span class="share">
+					<button type="button" class="btn">
+						<a href="https://twitter.com/jypnation"><img alt="twitter-w"
+							src="/web_ex5/images/twitter-w.png"></a>
+					</button>
+				</span> <span class="share">
+					<button type="button" class="btn">
+						<a href="https://www.facebook.com/jypnation"><img
+							alt="facebook-w" src="/web_ex5/images/facebook-w.png"></a>
+					</button>
+				</span> <span class="share">
+					<button type="button" class="btn">
+						<a href="https://www.youtube.com/jypentertainment"><img
+							alt="youtube-w" src="/web_ex5/images/youtube-w.png"></a>
+					</button>
+				</span>
+			</div>
+		</div>
+	</header>
+	<!-------------------- Header End -------------------->
+	<!------------------ Contents Start ------------------>
+	<div id="contents_title">
+		<div id="title_img">
+			<img alt="" src="/web_ex5/images/h2_title3.gif">
+		</div>
+	</div>
+	<div id="table_title">
+		<div class="notice-caption">
+			<span> <img alt="nogice_img.gif"
+				src="/web_ex5/images/notice_img.gif">
+			</span><span id="words">㈜JYP의 <br> <strong id="strong">새로운
+					소식</strong>을 알려드립니다.
+			</span>
+		</div>
+	</div>
+	<div class="container">
+		<table class="table table-hover">
+			<thead id="thead">
+				<tr>
+					<th class="title center font_size" id="no">NO</th>
+					<th class="title center font_size" id="title">TITLE</th>
+					<th class="title center font_size" id="date">DATE</th>
+				</tr>
+			</thead>
+			<tbody id="tbody">
+				<tr>
+					<td class="tuple center font_size">57</td>
+					<td class="tuple font_size"><a href="#">J.Y Park X Mnet
+							"슈퍼인턴" Teaser 4</a></td>
+					<td class="tuple center font_size">2018. 12. 13</td>
+				</tr>
+				<tr>
+					<td class="tuple center font_size">56</td>
+					<td class="tuple font_size"><a href="#">J.Y Park X Mnet
+							"슈퍼인턴" Teaser 3</a></td>
+					<td class="tuple center font_size">2018. 11. 14</td>
+				</tr>
+				<tr>
+					<td class="tuple center font_size">55</td>
+					<td class="tuple font_size"><a href="#">J.Y Park X Mnet
+							"슈퍼인턴" Teaser 2</a></td>
+					<td class="tuple center font_size">2018. 11. 07</td>
+				</tr>
+				<tr>
+					<td class="tuple center font_size">54</td>
+					<td class="tuple font_size"><a href="#">J.Y Park X Mnet
+							"슈퍼인턴" Teaser</a></td>
+					<td class="tuple center font_size">2018. 11. 01</td>
+				</tr>
+				<tr>
+					<td class="tuple center font_size">53</td>
+					<td class="tuple font_size"><a href="#">안녕하세요, JYP
+							엔터테인먼트입니다.</a></td>
+					<td class="tuple center font_size">2018. 08. 20</td>
+				</tr>
+				<tr>
+					<td class="tuple center font_size">52</td>
+					<td class="tuple font_size"><a href="#">안녕하세요, JYP
+							엔터테인먼트입니다.</a></td>
+					<td class="tuple center font_size">2018. 02. 13</td>
+				</tr>
+				<tr>
+					<td class="tuple center font_size">51</td>
+					<td class="tuple font_size"><a href="#">안녕하세요, JYP
+							Entertainment 입니다.</a></td>
+					<td class="tuple center font_size">2017. 09. 22</td>
+				</tr>
+				<tr>
+					<td class="tuple center font_size">50</td>
+					<td class="tuple font_size"><a href="#">안녕하세요, JYP
+							엔터테인먼트입니다.</a></td>
+					<td class="tuple center font_size">2017. 03. 22</td>
+				</tr>
+				<tr>
+					<td class="tuple center font_size">49</td>
+					<td class="tuple font_size"><a href="#">2017 JYP
+							PUBLISHING 상반기 작곡가 오디션안내</a></td>
+					<td class="tuple center font_size">2017. 02. 28</td>
+				</tr>
+			</tbody>
+			<tfoot id="tfoot2">
+				<tr>
+					<td colspan="3" class="center"><select id="select">
+							<option>전체</option>
+							<option>제목</option>
+							<option>내용</option>
+					</select> <input type="text" id="search">
+					<a href="#"><img alt="search.gif" src="/web_ex5/images/search.gif"></a>
+					</td>
+				</tr>
+			</tfoot>
+			<tfoot>
+				<tr>
+					<td colspan="3">
+						<div id="index">
+							<a href="#">&lt;&lt;</a> <a href="#">&lt;</a> <a href="#">1</a> <a
+								href="#">2</a> <a href="#">3</a> <a href="#">4</a> <a href="#">5</a>
+							<a href="#">6</a> <a href="#">7</a> <a href="#">8</a> <a href="#">9</a>
+							<a href="#">10</a> <a href="#">&gt;</a> <a href="#">&gt;&gt;</a>
+						</div>
+					</td>
+				</tr>
+			</tfoot>
+		</table>
+	</div>
+	<!------------------- Footer Start ------------------->
+	<footer id="footer2">
+		<div id="footer2_wrap">
+			<div id="footer2_info">
+				<ul>
+					<li>2011 COPYRIGHT © JYP. ALL RIGHT RESERVED</li>
+					<li><a href="#">개인정보처리방침</a></li>
+					<li><a href="#">내부정보관리규정</a></li>
+				</ul>
+			</div>
+			<div>
+				<select id="footer2_select">
+					<option>FAMILY SITE</option>
+					<option>JYP Fan's</option>
+					<option>JYP STORE</option>
+				</select>
+			</div>
+		</div>
+	</footer>
+	<!-------------------- Footer End -------------------->
+</body>
+</html>

@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<link type="text/css" rel="stylesheet" href="../css/layout.css">
+<title>:: JYP Entertainment ::</title>
+<link type="text/css" rel="stylesheet" href="../css/layout.css">
+<style type="text/css">
+#contents_title {
+	margin-top: 57px;
+	background-color: #f3f3f3;
+	height: 170px;
+}
+
+#title_img {
+	width: 980px;
+	height: 170px;
+	margin: 0 auto;
+}
+
+#title_img>img {
+	margin: 40px;
+}
+
+#contents {
+	width: 42%;
+	height: 600px;
+	margin: 0px auto;
+	margin-top: 50px;
+}
+
+#next_button {
+	width: 80px;
+	height: 40px;
+}
+
+#login {
+	float: right;
+}
+
+#select {
+	height: 25px;
+}
+
+#next {
+	text-align: center;
+}
+
+#overlap_button{
+	width: 140px;
+	height: 40px;
+	background-color: white;
+	color: black;
+	font-size: 1em;
+}
+</style>
+</head>
+<body>
+	<!------------------ Header Start -------------------->
+	<header>
+		<div id="header">
+			<div id="header_wrap">
+				<div id="logo">
+					<a href="/web_ex5/index.html"><img alt="logo"
+						src="/web_ex5/images/jyplogo.png"></a>
+				</div>
+				<nav id="header_nav">
+					<ul>
+						<li class="dropdown"><a class="dropdown-toggle"
+							data-toggle="dropdown" href="/web_ex5/company/company.html">COMPANY<span
+								class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li><a href="#">ABOUT JYP</a></li>
+								<li><a href="#">HISTORY</a></li>
+								<li><a href="/web_ex5/company/company.html">NOTICE</a></li>
+								<li><a href="#">CONTACT US</a></li>
+								<li><a href="#">RECRUIT</a></li>
+								<li><a href="#">IR</a></li>
+							</ul></li>
+						<li class="dropdown"><a class="dropdown-toggle"
+							data-toggle="dropdown" href="/web_ex5/company/company.html">AUDITION<span
+								class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li><a href="#">JYP AUDITION</a></li>
+								<li><a href="#">NEWS</a></li>
+								<li><a href="#">FAQ</a></li>
+							</ul></li>
+						<li><a href="/web_ex5/member/memberTerms.html">SIGN UP</a></li>
+						<li><a href="/web_ex5/member/memberLogin.html">LOG IN</a></li>
+					</ul>
+				</nav>
+				<nav id="header_subnav">
+					<button type="button" id="sitemap" class="btn">SITEMAP</button>
+					<ul>
+						<li><a href="#">KO</a></li>
+						<li><a href="#">EN</a></li>
+						<li><a href="#">CH</a></li>
+						<li><a href="#">JP</a></li>
+					</ul>
+				</nav>
+				<span class="share">
+					<button type="button" class="btn">
+						<a href="https://twitter.com/jypnation"><img alt="twitter-w"
+							src="/web_ex5/images/twitter-w.png"></a>
+					</button>
+				</span> <span class="share">
+					<button type="button" class="btn">
+						<a href="https://www.facebook.com/jypnation"><img
+							alt="facebook-w" src="/web_ex5/images/facebook-w.png"></a>
+					</button>
+				</span> <span class="share">
+					<button type="button" class="btn">
+						<a href="https://www.youtube.com/jypentertainment"><img
+							alt="youtube-w" src="/web_ex5/images/youtube-w.png"></a>
+					</button>
+				</span>
+			</div>
+		</div>
+	</header>
+	<!-------------------- Header End -------------------->
+	<!------------------ Contents Start ------------------>
+	<div id="contents_title">
+		<div id="title_img">
+			<img alt="" src="/web_ex5/images/h2_title3.gif">
+		</div>
+	</div>
+	<div id="contents">
+		<div>
+			<h3>계정 정보입력</h3>
+			<table class="table">
+				<tr>
+					<td><h5>아이디</h5></td>
+					<td><input type="text"> <!-- Trigger the modal with a button -->
+						<button type="button" class="btn btn-info btn-lg"
+							data-toggle="modal" data-target="#myModal" id="overlap_button">아이디 중복 확인</button> <!-- Modal -->
+						<div id="myModal" class="modal fade" role="dialog">
+							<div class="modal-dialog">
+
+								<!-- Modal content-->
+								<div class="modal-content">
+									<div class="modal-header">
+										<button type="button" class="close" data-dismiss="modal">&times;</button>
+										<h4 class="modal-title">아이디 중복 확인</h4>
+									</div>
+									<div class="modal-body">
+										<p>사용 가능한 아이디입니다.</p>
+									</div>
+									<div class="modal-footer">
+										<button type="button" class="btn btn-default"
+											data-dismiss="modal">Close</button>
+									</div>
+								</div>
+
+							</div>
+						</div></td>
+				</tr>
+				<tr>
+					<td><h5>닉네임</h5></td>
+					<td><input type="text" placeholder="닉네임을 입력해주세요."></td>
+				</tr>
+				<tr>
+					<td><h5>비밀번호(8~32자리)</h5></td>
+					<td><input type="password" placeholder="비밀번호(8~32자리)"></td>
+				</tr>
+				<tr>
+					<td><h5>비밀번호 재확인</h5></td>
+					<td><input type="password" placeholder="비밀번호 재입력"></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td>· 비밀번호는 8 ~ 32 자의 영문 대소문자, 숫자, 특수문자를 조합하여 설정해주세요.<br>
+						· 다른사이트에서 사용하는 것과 동일하거나 쉬운 비밀번호는 사용하지 마세요.<br> · 안전한 계정 사용을
+						위해 비밀번호는 주기적으로 변경해주세요.
+					</td>
+				</tr>
+				<tr>
+					<td><h5>이메일</h5></td>
+					<td><input type="text"> @ <input type="text">
+						<select id="select">
+							<option value="domain">도메인 선택</option>
+							<option value="naver">naver.com</option>
+							<option value="hanmail">hanmail.net</option>
+							<option value="gmail">gmail.com</option>
+							<option value="daum">daum.net</option>
+							<option value="hotmail">hotmail.com</option>
+					</select></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td>· 입력한 이메일로 인증메일이 발송됩니다.<br> · 실제로 사용중인 이메일주소를 입력해주세요.
+						비밀번호 분실 시 이메일을 통해 재설정이 가능합니다.
+					</td>
+				</tr>
+			</table>
+			<div id="next">
+				<button type="button" class="btn btn-info" id="next_button">다음</button>
+			</div>
+		</div>
+		<div id="login">
+			이미 계정이 있다면?<a href="/web_ex5/member/memberLogin.html"> 기존 계정으로
+				로그인</a>
+		</div>
+	</div>
+	<!------------------- Footer Start ------------------->
+	<footer id="footer2">
+		<div id="footer2_wrap">
+			<div id="footer2_info">
+				<ul>
+					<li>2011 COPYRIGHT © JYP. ALL RIGHT RESERVED</li>
+					<li><a href="#">개인정보처리방침</a></li>
+					<li><a href="#">내부정보관리규정</a></li>
+				</ul>
+			</div>
+			<div>
+				<select id="footer2_select">
+					<option>FAMILY SITE</option>
+					<option>JYP Fan's</option>
+					<option>JYP STORE</option>
+				</select>
+			</div>
+		</div>
+	</footer>
+	<!-------------------- Footer End -------------------->
+</body>
+</html>
